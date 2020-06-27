@@ -2,4 +2,5 @@ Actual program: https://github.com/dji-sdk/Tello-Python/tree/master/Single_Tello
 
 Notes on program:
 * Connecting to program:
-  * test
+  * The original connection to the drone itself is accomplished in the tello.py document.
+   * test
