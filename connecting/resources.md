@@ -27,3 +27,13 @@ Notes on program:
     * Since the base-level of programming provided by the app is not really... programming, the main idea that comes to mind is to provide the students with code that already connects them to the drone. Then, the main challenges at first would be to just send commands to the drone.
     * Also, for the beggining of the class, a separate class could be created for the students use. With functions built into it like: forwards(), left90(), etc...
     * This would just give students an idea of what they could do with the drone. (Perhaps provide them with a document with functions on it?)
+
+* Notes on own application:
+  * My program is a close approximation to this: https://steemit.com/python/@makerhacks/programming-the-ryze-dji-tello-with-python
+  * The only thing that I did differently was to include multiple try/except clauses to run just a couple of commands.
+  * Note: One confusing bit was having to send the "command" command to take control of the drone initially.
+  * Question: How does the drone handle a chain of commands? Is it done through something like a stack? (A.K.A- pull off command to command) Or is there some sort of timing involved?
+
+* Closing thoughts:
+  * So, I really do believe that the best way to teach basic programming using drone tech is to provide a pre-written class that students could perform commands from.
+  * One that I am working on on my local machine right now is my Drone class/document. When I'm done with this, I hope to be able to be able to both start a connection to the drone, and create several, premade functions that would allow students to pull from it. (Note: Still a work in progress)
