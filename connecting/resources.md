@@ -37,3 +37,4 @@ Notes on program:
 * Closing thoughts:
   * So, I really do believe that the best way to teach basic programming using drone tech is to provide a pre-written class that students could perform commands from.
   * One that I am working on on my local machine right now is my Drone class/document. When I'm done with this, I hope to be able to be able to both start a connection to the drone, and create several, premade functions that would allow students to pull from it. (Note: Still a work in progress)
+  * Also, I am still figuring out the best way to receive/store information returned by the drone. Right now my basic program doesn't have a safety-check in place to tell if the drone is actually accomplishing the tasks sent to it or not. (still a work in progress)
