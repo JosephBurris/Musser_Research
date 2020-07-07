@@ -34,15 +34,16 @@
   * @Param: None
   * @Output: None
   * @Errors: If you are already setting the drone object to connect to the same/another drone, then it will print "You are already commanding a drone" and exit.
-  * Desc: This function must be called in order to send commands to the drone, like "takeoff", "land", etc... *(Reference 1)* If this is not called before, any command will print "The drone is not set to command", and then exit.
+  * Desc: This function must be called in order to send commands to the drone, like "takeoff", "land", etc... **(Reference 1)** If this is not called before, any command will print "The drone is not set to command", and then exit.
 
 * drone.takeoff()
   * @Param: None
   * @Output: None
-  * @Errors: View (Reference 1)
+  * @Errors: View **(Reference 1)**
   * Desc: This command causes the drone to takeoff, generally hovering around 2-3 feet about the ground.
   
 * drone.land()
   * @Param: None
   * @Output: None
-  * @Errors: View (Reference 1)
+  * @Errors: View **(Reference 1)**
+  * Desc: This command causes the drone to land. While this is not required at the end of a program (because the drone will land itself after disconnecting), it should still be used for good programming practice purposes.
