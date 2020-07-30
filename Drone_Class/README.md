@@ -6,6 +6,9 @@
   * While the light is blinking multiple different colors, look at your networks options for something similar to TELLO...
   * After you see the correct option, connect to it after the light starts rappidly flashing yellow, signaling proper connection.
   * Now, you should be able to run your code!
+* Disconnecting from the Tello and running another test (IMPORTANT):
+  * In order to set the Tello to run another test, you MUST disconnect the drone by pressing the power button located on the side of the tello and repeating the steps to connect.
+  * A red light will appear if you fail to do this (signalling a disconnect of the socket) and you will NOT be able to run your code until you restart.
 * In order to use this class, the drone.py file must be in your working folder, and the beginning of your code must include the following line:
   * from drone import *
 * Creation of a new drone object:
