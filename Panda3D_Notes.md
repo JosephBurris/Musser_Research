@@ -18,4 +18,5 @@
     * I will note that this may have been easier for someone that has experience in 3D modeling programs, but unfortunately this was VERY new to me personally.
   * Important Note!: This method for file transfer is not completely perfect, it (for some reason) imports the models as without color and entirely black (which is not TOO much of a problem, but for anyone continuing this research, you may want to have a look into it). I tried exporting the models and transferring them several times and this problem persisted.
  
- 
+ * Important notes on what I used from Panda3d:
+   * Put note summary here
