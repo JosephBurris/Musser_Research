@@ -8,4 +8,6 @@
   
 * How to import/create models into Panda3d:
   * The 3D modeling program that Panda3d recommends (and that I would recommend as well despite my lack of 3D modeling knowledge) would be Blender
-    * Blender is essentially just a
+    * Blender is essentially just a 3D modeling program that allows for easy import, manipulation, and export of 3D models of differing file types.
+     * For more...
+    * The main file type of Blender is "filename.blender", which is a bit of 
