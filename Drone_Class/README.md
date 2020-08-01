@@ -13,8 +13,8 @@
   * from drone import *
 * Creation of a new drone object:
   * In order to create a drone object, the drone object must be provided with a valid IP and Port.
-    * In the format of this: test = new Drone("exampleIP"(String),1111(Int))
-    * Example: test = new Drone("192.168.10.1", 8889)
+    * In the format of this: test = Drone("exampleIP"(String),1111(Int))
+    * Example: test = Drone("192.168.10.1", 8889)
     
 **General Notes on Python Objects**
 * All objects are created in the form: test = Object(parameter1, parameter2, etc...)
