@@ -1,0 +1,21 @@
+from drone import *
+
+test = Drone("192.168.10.1", 8889)
+
+test.connect()
+print("made it")
+test.command()
+print("made it")
+test.takeoff()
+print("made it")
+test.up(50)
+test.forward(30)
+test.left(30)
+test.back(30)
+test.right(30)
+test.down(30)
+test.cw(90)
+test.ccw(90)
+test.land()
+print("made it")
+test.disconnect()
