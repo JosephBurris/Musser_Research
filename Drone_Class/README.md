@@ -33,6 +33,12 @@
   * @Errors: If this function is called, and no drone is already connected, then it will print the message "You are not connected to a drone yet"
   * Desc: This must be called after you are done using the current drone. While it is not required, if not done, other errors may occur with the drone.
   
+* (Hidden) drone.send_command(command)
+  * @Param: Command (String)
+  * @Output: Drone_Response (String)
+  * @Errors: View **(Reference 1)** This function will fail if a "non-command" function is sent when a drone is not sent to command. Also, if the function does not receive the response "Ok" from the drone, then it forces the drone to land as a safety precaution for the drone itself.
+  * Desc: This function is the function through which all other functions are sent. It essentially takes the String command sent by each individual command, encodes that command, sends the command to the drone, recieves a response back from the drone (if given), then returns back the response that the drone gave.
+  
 * (IMPORTANT!) drone.command()
   * @Param: None
   * @Output: None
@@ -50,3 +56,57 @@
   * @Output: None
   * @Errors: View **(Reference 1)**
   * Desc: This command causes the drone to land. While this is not required at the end of a program (because the drone will land itself after disconnecting), it should still be used for good programming practice purposes.
+  
+* drone.forward(distance)
+  * @Param: distance (20cm - 500cm)
+  * @Output: None
+  * @Errors: View **(Reference 1)** Also, **(Reference 2)** if something is sent to the drone that is not an "int" or it is not between 20 and 500, a response will be given back as "Please enter an integer for the distance" or "The distance entered must be between 20 and 500" respectively and exit.
+  * Desc: This command causes the drone to go forwards a specified number of centimeters relative to its current location.
+  
+* drone.back(distance)
+  * @Param: distance (20cm - 500cm)
+  * @Output: None
+  * @Errors: View **(Reference 1)** and **(Reference 2)**
+  * Desc: This command causes the drone to go backwards a specified number of centimeters relative to its current location.
+
+* drone.left(distance)
+  * @Param: distance (20cm - 500cm)
+  * @Output: None
+  * @Errors: View **(Reference 1)** and **(Reference 2)**
+  * Desc: This command causes the drone to go left a specified number of centimeters relative to its current location.
+  
+* drone.right(distance)
+  * @Param: distance (20cm - 500cm)
+  * @Output: None
+  * @Errors: View **(Reference 1)** and **(Reference 2)**
+  * Desc: This command causes the drone to go right a specified number of centimeters relative to its current location.
+  
+* drone.up(distance)
+  * @Param: distance (20cm - 500cm)
+  * @Output: None
+  * @Errors: View **(Reference 1)** and **(Reference 2)**
+  * Desc: This command causes the drone to go upwards a specified number of centimeters relative to its current location.  
+  
+* drone.down(distance)
+  * @Param: distance (20cm - 500cm)
+  * @Output: None
+  * @Errors: View **(Reference 1)** and **(Reference 2)**
+  * Desc: This command causes the drone to go downwards a specified number of centimeters relative to its current location.
+  
+* drone.cw(degrees)
+  * @Param: degrees
+  * @Output: None
+  * @Errors: View **(Reference 1)**, also **(Reference 3)** if something is sent to the drone that is not an "int" or it is not between 1 and 3600, a response will be given back as "Please enter an integer for the degrees" or "The degrees entered must be between 1 and 3600" respectively and exit.
+  * Desc: This command causes the drone to turn clockwise relative to its current heading.
+
+* drone.cw(degrees)
+  * @Param: degrees
+  * @Output: None
+  * @Errors: View **(Reference 1)** and **(Reference 3)**
+  * Desc: This command causes the drone to turn counter-clockwise relative to its current heading.
+
+* drone.get_height() **(WIP)**
+  * @Param: None
+  * @Output: Height
+  * @Errors: View **(Reference 1)**
+  * Desc: This command gets information from the drone about how high it is, relative to it's current "ground"
