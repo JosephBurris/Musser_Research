@@ -55,7 +55,7 @@
   * @Param: None
   * @Output: None
   * @Errors: View **(Reference 1)**
-  * Desc: This command causes the drone to takeoff, generally hovering around 2-3 feet about the ground.
+  * Desc: This command causes the drone to takeoff, generally hovering around 1-2 feet about the ground.
   
 * drone.land()
   * @Param: None
@@ -105,7 +105,7 @@
   * @Errors: View **(Reference 1)**, also **(Reference 3)** if something is sent to the drone that is not an "int" or it is not between 1 and 3600, a response will be given back as "Please enter an integer for the degrees" or "The degrees entered must be between 1 and 3600" respectively and exit.
   * Desc: This command causes the drone to turn clockwise relative to its current heading.
 
-* drone.cw(degrees)
+* drone.ccw(degrees)
   * @Param: degrees
   * @Output: None
   * @Errors: View **(Reference 1)** and **(Reference 3)**
