@@ -21,6 +21,12 @@
 * All functions of objects are called in the form: test.function(parameter1, parameter2, etc...)
 
 **Drone Methods/Functions**
+* (Hidden) drone.__init__(ip,port)
+  * @Param: ip (valid IP adress, String), port (Valid port, int)
+  * @Output: None
+  * @Errors: None
+  * Desc: This is a hidden function for the creation  of new drone objects and preps the IP and Port for their socket connections done in drone.connect()
+
 * (IMPORTANT!) drone.connect()
   * @Param: None
   * @Output: None
