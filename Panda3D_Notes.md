@@ -49,4 +49,9 @@
 * Panda3d sequences:
   * I would refer to this tutorial for sequences: https://docs.panda3d.org/1.10/python/programming/intervals/sequences-and-parallels
   * Also, this is another good tutorial which covers "posinterval" which I used a LOT to move the drone: https://docs.panda3d.org/1.10/python/introduction/tutorial/using-intervals-to-move-the-panda
-  * tbc
+  * This example program created by the panda3d devs is helpful too: https://docs.panda3d.org/1.10/python/introduction/tutorial/starting-panda3d
+  * Also, while I did not use "Tasks" to accomplish this program, here is a message board on both "tasks" and "sequences": https://discourse.panda3d.org/t/sequence-and-task-solved/5469
+  * In a VERY basic summary, in order to create sequences:
+    * You first need to create a blank (or not blank) sequence object
+    * Then, you need to attach some sort of animation to that sequence object through the ".seq.add()"
+    * More information on animations here: https://docs.panda3d.org/1.10/python/programming/models-and-actors/actor-animations
