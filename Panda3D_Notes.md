@@ -5,10 +5,12 @@
 * I also found these youtube tutorials to be very effective for learning panda3d: https://youtu.be/LNMz52Pkl_U
 
 * To start off, I highly recommend (and went through it myself) the introduction to Panda3D tutorial on the above site. 
+
   * It definitely takes some time to complete, but I reccomend it heavily.
   * Unfortunately, the tutorial does not talk too much about how to import models for use into panda3D, which I will explain how I did below.
   
-* How to import/create models into Panda3d:
+* How to import/create models into Panda3d:*
+
   * 3D modeling "cheat-sheet": https://docs.panda3d.org/1.10/python/more-resources/cheat-sheets (under "models")
   * The 3D modeling program that Panda3d recommends (and that I would recommend as well despite my lack of 3D modeling knowledge) would be Blender
     * Blender is essentially just a 3D modeling program that allows for easy import, manipulation, and export of 3D models of differing file types.
@@ -21,9 +23,11 @@
   * Important Note!: This method for file transfer is not completely perfect, it (for some reason) imports the models as without color and entirely black (which is not TOO much of a problem, but for anyone continuing this research, you may want to have a look into it). I tried exporting the models and transferring them several times and this problem persisted.
  
  ** Important notes on what I used from Panda3d:**
+ 
    * So, this is a brief summary on what I used from panda3d to create my 3d environment
 
 * Panda3d worlds:
+
   * Panda3d contains "worlds", which are essentially the three-dimensional space that objects lie in
   * The main resource that I used for reference in creating worlds in this software was this tutorial: https://grimfang-studio.org/data/books/book1/Panda3D%20Book%201.pdf
     * This gives a brief explanation of worlds, and how they work, as well as a brief introduction to objects/models/actors as well. (objects are the representations of 3d models, and actors are specific types of objects that present their own functions)
@@ -33,6 +37,7 @@
     * Then in code you obviously have to create an object related to the world (where the showbase is initiated), then you have to call ".run()" on that object
     
 * Panda3d Models/Objects:
+
   * I would refer again to this tutorial: https://grimfang-studio.org/data/books/book1/Panda3D%20Book%201.pdf for the creation of models
   * Also, I would refer to this example program created in Panda3d: https://docs.panda3d.org/1.10/python/introduction/tutorial/starting-panda3d
     * Start with this page and I would recommend running through the rest of the example program's tutorial
@@ -47,6 +52,7 @@
     * Then, I would recommend this but it is not a necessity, you SHOULD set the model's scale and position (the posistion is auto-set to x=0,y=0,z=0)
 
 * Panda3d sequences:
+
   * I would refer to this tutorial for sequences: https://docs.panda3d.org/1.10/python/programming/intervals/sequences-and-parallels
   * Also, this is another good tutorial which covers "posinterval" which I used a LOT to move the drone: https://docs.panda3d.org/1.10/python/introduction/tutorial/using-intervals-to-move-the-panda
   * This example program created by the panda3d devs is helpful too: https://docs.panda3d.org/1.10/python/introduction/tutorial/starting-panda3d
@@ -55,3 +61,11 @@
     * You first need to create a blank (or not blank) sequence object
     * Then, you need to attach some sort of animation to that sequence object through the ".seq.add()"
     * More information on animations here: https://docs.panda3d.org/1.10/python/programming/models-and-actors/actor-animations
+    * (You can also append sequences to other sequences)
+    * Finally, you need to start the sequence with "sequence.start()"
+
+** Important Note on Modeler Class**
+
+* I think that it is important to note that, while I tried to make the creation of objects and running of the modeled drone as similar to my Drone.py class, I could not give varrying feedback for non-existent hardware.
+* So, because of this, any I ignored any errors that the drone might throw due to incorrect connection/message receiving
+  * I think that it is better to assume that the drone is set up and receives commands without fail, rather than doing something like throwing really random errors.
